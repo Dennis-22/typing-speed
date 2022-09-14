@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --glass: rgba(8, 8, 8, 0.15);
+    --radius: 10px;
+    --faint: rgba(255, 255, 255, 0.678);
+    --blue: #4b5efc;
+    --green: rgb(139, 223, 139);
+    --red: rgb(238, 68, 68)
+}
+
+body{
+    background-color: var(--blue);
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+
+.main{
+    padding-top: 4rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* general styles */
+
+.title{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.big{font-size: 1.2rem;}
+
+.text{
+    margin: 10px 0;
+}
+
+.small-text{
+    font-size: .8rem;
+}
+
+.card{
+    background-color: var(--glass);
+    margin: 2rem auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: var(--radius);
+}
+
+.button{
+    padding: .7rem 0;
+    cursor: pointer;
+    width: 40%;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(204, 202, 202);
+}
+
+.box{
+    background-color: var(--glass);
+    text-align: center;
+    padding: 20px;
+    border-radius: var(--radius);
+}
+
+.word-untyped{
+    color: #fff;
+}
+
+.word-correct{
+    color: var(--green);
+}
+
+.word-incorrect{
+    color: var(--red);
+}
+
+/* ************************** */
+
+.welcome{}
+
+.welcome-text{
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.difficuty-select{
+    display: none;
+}
+
+.playground{
+    display: none;
+}
+
+.utils{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play{
+    margin-top: 5rem;
+}
+
+.word{
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.input{
+    padding: .6rem .8rem;
+    width: 40%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.complete{
+    display: none;
+}
+
+.complete > *{
+    margin: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .main{width: 95%;}
+    .card{width: 90%;}
+    .button{width: 90%;}
+    .utils{flex-direction: column;}
+    .utils > p{margin: 5px 0;}
+    .input{width: 90%;}
+}

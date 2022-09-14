@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    
+    <title>Mavis Beacon Jnr</title>
+</head>
+<body>
+    <main class="main">
+      <div class="box welcome" welcome>
+        <h1 class="title">Welcome to Mavis Beacon Jnr</h1>
+          <div class="card p-4">
+              <p class="text big welcome-text">Type the words that pops up on the screen</p>
+              <p class="text">Press start to select the level of your choice</p>
+          </div>
+        <button start-btn class="button">Start</button>
+      </div>
+
+      <div class="box difficuty-select" difficuty-select>
+        <h1 class="title">Select Difficulty</h1>
+        <div class="card">
+          <p class="text big"><strong>Easy</strong></p>
+          <p class="text">10 words - 30secs</p>
+          <p class="text">Type ten words in thirty seconds</p>
+          <button mode="easy" mode-btn class="button">Select</button>
+        </div>
+
+        <div class="card">
+          <p class="text big"><strong>Medium</strong></p>
+          <p class="text">10 words - 25secs</p>
+          <p class="text">Type ten words in thirty seconds</p>
+          <button mode="medium" mode-btn class="button">Select</button>
+        </div>
+
+        <div class="card">
+          <p class="text big"><strong>Hard</strong></p>
+          <p class="text">10 words - 20secs</p>
+          <p class="text">Type ten words in thirty seconds</p>
+          <button mode="hard" mode-btn class="button">Select</button>
+        </div>
+      </div>
+
+      <div class="box playground" playground>
+        <section class="utils">
+          <p><i class="far fa-clock"></i>Time: <span time>0</span></p>
+          <p class="score"><i class="fas fa-user-astronaut"></i>Score: <span score>0</span></p>
+          <p class="score"><i class="fas fa-flag"></i>Level: <span lvl>0</span> / 10</p>
+        </section>
+
+        <section class="play">
+          <p word class="word">Caterpiller</p>
+          <input input class="input" type="text"/>
+        </section>
+      </div>
+
+      <div class="box complete" complete>
+        <h4 class="title" complete-text></h4>
+       
+        <p class="text">Your score: <span completed-score>0</span></p>
+       
+        <button class="button" play-again>Play again</button>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+</html>
